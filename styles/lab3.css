@@ -1,0 +1,33 @@
+/* Custom styles */
+header img {
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+  object-fit: cover;
+}
+
+.card {
+  background-color: #f8f9fa;
+  border: 1px solid black !important;
+  border-radius: 12px !important;
+}
+
+footer {
+  font-style: italic;
+}
+
+.list-group-item {
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.project-link {
+  display: block; /* Makes the entire item clickable */
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Inherit text color */
+  padding: 10px; /* Padding for clickable area */
+}
+
+.project-link:hover {
+  background-color: #f0f0f0; /* Light grey background on hover */
+  color: #007bff; /* Change text color on hover */
+}

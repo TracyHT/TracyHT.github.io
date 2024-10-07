@@ -1,0 +1,294 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Navbar styling */
+.navbar {
+  background-color: rgba(255, 255, 255, 0.4);
+  color: black;
+  box-shadow: 0px 4px 12px rgba(13, 10, 44, 0.06);
+  padding: 10px 20px;
+}
+
+.navbar .navbar-brand {
+  font-size: 24px; /* Adjust font size for your name */
+}
+
+.navbar .navbar-nav {
+  margin-right: 20px;
+  height: 100%;
+}
+
+.navbar .nav-link {
+  color: black;
+  font-size: 18px;
+  padding: 10px 15px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+  background-color: #555;
+  color: white;
+}
+
+/* Body styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+  line-height: 1.6;
+}
+
+main {
+  padding: 80px 20px;
+}
+
+/* About page styling */
+h1 {
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+  text-align: center;
+  animation: slideInTop 1s ease-out;
+}
+
+h2 {
+  margin: 20px 0 10px;
+  font-size: 2rem;
+  text-align: center;
+  color: #444;
+}
+
+p,
+ul {
+  margin-bottom: 10px;
+  text-align: center; /* Center align paragraphs and lists */
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+/* Images Section */
+.images-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px; /* Add space between images */
+  margin-top: 20px;
+}
+
+.travel-image {
+  width: 100%;
+  max-width: 33%; /* Make sure the images take up 1/3 of the container */
+  height: 400px; /* Set a fixed height */
+  object-fit: cover; /* This maintains aspect ratio and scales the image to fill the space */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+/* Footer styling */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+/* Form styling */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+form label {
+  margin-top: 10px;
+}
+
+form input,
+form textarea {
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #555;
+}
+
+/* Portfolio items styling */
+.portfolio-items {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.portfolio-items .item {
+  width: 30%;
+  background-color: #ddd;
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+/* Image Cards Section */
+.image-cards {
+  padding: 20px 80px;
+}
+
+.image-cards h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #333;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 30%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.card img {
+  height: 240px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.card-content h3 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.card-content p {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  color: #666;
+  text-align: left;
+}
+
+.card-content a {
+  text-decoration: none;
+  color: #ff6b6b;
+  font-weight: bold;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+/* Animation */
+@keyframes slideInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-50%); /* Start 50% above its normal position */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* End at its normal position */
+  }
+}
+
+.form-container {
+  background-color: rgba(255, 255, 255, 0.8); /* Background color of the box */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  padding: 20px; /* Spacing inside the box */
+  max-width: 500px; /* Max width of the form container */
+  margin: 20px auto; /* Center the box on the page */
+}
+
+.contact-page {
+  background-image: url("../images/image2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+article {
+  overflow: hidden;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  width: 45%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px; /* Space between articles */
+}
+
+.articles-container {
+  padding: 0px 80px;
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space out articles */
+  flex-wrap: wrap; /* Allow articles to wrap to the next line if needed */
+  gap: 20px; /* Space between articles */
+}
+
+.blog-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+article h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+article p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+article a {
+  color: #ff6b6b;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+article a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
